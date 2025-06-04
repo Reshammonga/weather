@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 
-const API = "094f73629282ae3e8177343466091122";
+const API = process.env.REACT_APP_API_KEY;
 function App() {
   const [Weather, setWeather] = useState("");
   const [error, seterror] = useState("");
